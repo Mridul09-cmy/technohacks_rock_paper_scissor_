@@ -1,0 +1,15 @@
+The code begins by importing the random module, which is used to generate a random choice for the computer.
+
+The get_user_choice function is defined to prompt the user to enter their choice (rock, paper, or scissors). It uses a while loop to repeatedly ask for input until a valid choice is entered. The user's choice is converted to lowercase using the lower() method to make the input case-insensitive. If an invalid choice is entered, an error message is printed, and the loop continues.
+
+The get_computer_choice function generates a random choice for the computer using the random.choice() function. The choices are stored in a list, choices, which contains 'rock', 'paper', and 'scissors'. The random.choice() function selects a random element from this list and returns it as the computer's choice.
+
+The determine_winner function takes the user's choice and the computer's choice as arguments and determines the winner based on the game rules. If the user's choice is the same as the computer's choice, it's a tie. If the user wins according to the game rules (rock beats scissors, paper beats rock, scissors beats paper), the function returns "You win!" Otherwise, the computer wins and the function returns "Computer wins!"
+
+The play_game function is the main function that controls the flow of the game. It starts by printing a welcome message. Inside a while loop, it calls get_user_choice to get the user's choice and get_computer_choice to get the computer's choice. It then prints the choices made by both the user and the computer and determines the winner using determine_winner. The result is printed to the console.
+
+After each game, the user is prompted to play again. The input is converted to lowercase, and if the user enters "yes," the loop continues, and another game is played. If the user enters anything other than "yes," the loop is broken, and the game ends.
+
+Finally, outside the loop, a "Thanks for playing!" message is printed to the console.
+
+To start the game, the last line of the code, play_game(), is called. This invokes the play_game function, which starts the game and repeats until the user chooses to stop playing.
